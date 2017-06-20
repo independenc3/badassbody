@@ -1301,48 +1301,6 @@ If you’re missing any of this equipment, there are usually alternative movemen
     </div>
 </div>
 
-  <div class="modal fade center-modal" id="youtube_video_player_modal" tabindex="-1">
-    <div class="modal-dialog modal-lg" role="document">
-      <div id="youtube_video_player"></div>
-    </div>
-</div>  <script>
-
-      var tag = document.createElement('script');
-      tag.src = "https://www.youtube.com/iframe_api";
-      var firstScriptTag = document.getElementsByTagName('script')[0];
-      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-      var player;
-
-      function onYouTubeIframeAPIReady() {
-        player = new YT.Player('youtube_video_player', {
-          width: '100%',
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
-
-      function onPlayerReady(event) {}
-      function onPlayerStateChange(event) {}
-      function stopVideo() { player.stopVideo(); }
-
-      $(document).ready(function(){
-        $('#youtube_video_player_modal')
-        .on('hidden.bs.modal', function (e) {
-          stopVideo();
-        })
-        .on('show.bs.modal', function (e) {
-          player.loadVideoById(
-            $(e.relatedTarget).data('youtube-video-tag')
-          );
-          player.playVideo();
-        });
-
-      })
-
-  </script>
 
 </body>
 </html>
