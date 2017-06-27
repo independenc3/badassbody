@@ -68,13 +68,80 @@ window.addEventListener('resize', checkResize);
 
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-xs-12 text-center" style="background-color:black;">
+			<div class="col-xs-12 text-center product" style="background-color:black;display:none;">
 				  <a class="btn btn-primary-action btn-xl mobile-sm-block-btn primary-button-style" style="margin:25px;" data-scroll="true" href="#pricing">
     Start Now
 </a>
 			</div>
+      <div class="col-xs-12 text-center instructions" >
+            <div class="lp-text" style="min-height:20px;outline:0" spellcheck="false">
+              <p class="line-height-scale-3 font-scale-4 text-align-center" style="min-height:20px;outline:0">
+              </p>
+              <p class="line-height-scale-3 font-scale-4 text-align-center">Watch the ENTIRE VIDEO now for registration information and learn about the 3 game changers for your transformation</strong>.</p><p class="line-height-scale-3 font-scale-4 text-align-center"><strong>&gt;&gt; Registration information will appear in the middle of this video. &lt;&lt;</strong>
+              </p>
+              <p class="line-height-scale-3 font-scale-4 text-align-center"><br>
+              </p>
+            </div>
+			</div>
 		</div>
 	</div>
+  
+  
+
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+    // check cookie
+    var visited = Cookies.get('visited');
+    
+    if (visited) {
+
+      var divsToHide = document.getElementsByClassName("instructions");
+      for(var i = 0; i < divsToHide.length; i++){
+        divsToHide[i].style.display = "none";}
+
+
+
+      var divsToShow = document.getElementsByClassName("product");
+      for(var i = 0; i < divsToShow.length; i++){
+        divsToShow[i].style.display = "block";
+        divsToShow[i].style.visibility = "visible";}
+
+    } else {
+      console.log("Hide");
+
+      setTimeout(
+        function() {
+          var divsToHide = document.getElementsByClassName("product");
+          for(var i = 0; i < divsToHide.length; i++){
+            divsToHide[i].style.display = "none";}
+        }, 4000);
+
+      setTimeout(
+        function() {
+          var divsToHide = document.getElementsByClassName("instructions");
+          for(var i = 0; i < divsToHide.length; i++){
+            divsToHide[i].style.display = "none";}
+        }, 562000);
+
+      setTimeout(
+        function() {
+          var divsToShow = document.getElementsByClassName("product");
+          for(var i = 0; i < divsToShow.length; i++){
+            divsToShow[i].style.display = "block";
+            divsToShow[i].style.visibility = "visible";}
+        }, 562000);
+
+    }
+
+    // set cookie
+    Cookies.set('visited', 'true', { expires: 30 });
+});
+</script>
+
+
+<div class="product"  style="visibility:hidden;">
 
   <div class="course-teasers">
 
@@ -1292,6 +1359,8 @@ If you’re missing any of this equipment, there are usually alternative movemen
 
     </div>
   </div>
+</div>
+
 </div>
 
 </div>
