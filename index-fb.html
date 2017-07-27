@@ -1418,10 +1418,12 @@ If you’re missing any of this equipment, there are usually alternative movemen
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-59174406-1', 'auto');
+  ga('create', 'UA-59174406-1', 'auto', {'allowLinker': true});
   ga('send', 'pageview');
+  ga('require', 'linker');
+  ga('linker:autoLink', ['passion.io'] );
 
 </script>
-
+    
 </body>
 </html>
