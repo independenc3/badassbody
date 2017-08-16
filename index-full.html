@@ -26,10 +26,6 @@
 <link rel="stylesheet" media="all" href="/assets/learn/base-035a6b8c21b1e8da56edc64fed3aa87e.css" />
 <link rel="stylesheet" media="all" href="/assets/learn/courses-face2801b15fab31d67045e517c44a14.css" />
 
-<script src="/assets/cookie.js"></script>
-<script src="/assets/application-b6a4bfc87d38eede2cae50c0fce4a7b7.js"></script>
-<script src="/assets/learn/base-e7c621880b5f2e4bf307dd488cc28cc4.js"></script>
-<script src="/assets/learn/courses-6aa4ba396fa0ea70e8fb2adfa841e28e.js"></script>
 
 <meta name="csrf-param" content="authenticity_token" />
 <meta name="csrf-token" content="B9v6GvAPIetjoIiZUVprhSLy7bt062x4LDyOF631uwrJV2krn+1jr+Jpb8PcDxeaqQnjxwoyB+1YrqTaJX1afg==" />
@@ -72,83 +68,19 @@ window.addEventListener('resize', checkResize);
 
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-xs-12 text-center product" style="background-color:black;display:none;">
+			<div class="col-xs-12 text-center" style="background-color:black;">
 				  <a class="btn btn-primary-action btn-xl mobile-sm-block-btn primary-button-style" style="margin:25px 0px;" data-scroll="true" href="#pricing">
     Start Now
 </a>
 			</div>
-      <div class="col-xs-12 text-center instructions" >
-            <div class="lp-text" style="min-height:20px;outline:0" spellcheck="false">
-              <p class="line-height-scale-3 font-scale-4 text-align-center" style="min-height:20px;outline:0">
-              </p>
-              <p class="line-height-scale-3 font-scale-4 text-align-center">Watch the ENTIRE VIDEO now for registration information and learn about the 3 game changers for your transformation</strong>.</p><p class="line-height-scale-3 font-scale-4 text-align-center"><strong>&gt;&gt; Registration information will appear in the middle of this video. &lt;&lt;</strong>
-              </p>
-              <p class="line-height-scale-3 font-scale-4 text-align-center" style="font-size:0.75em;">All data, testimonials and customer feedback on this page and in this presentation reflect the specific experiences of the users of Badass Body X and must neither be typical nor can these results be guaranteed. We DO NOT promise you that you will get the same result immediately and in any case. But we will provide you with a very good product which will definitely have a positive effect on you. We are very proud of what our customers say and have already achieved, and we hope you will be, too. We also offer you a full 100% money-back guarantee.
-              </p>
-            </div>
-			</div>
 		</div>
-		<div class="row product" style="background-color:black;display:none;">
+		<div class="row" style="background-color:black;">
 			<div class="col-md-8 col-md-offset-2 text-center">
           <p style="font-size:0.75em;color:#DDD;">All data, testimonials and customer feedback on this page and in this presentation reflect the specific experiences of the users of Badass Body X and must neither be typical nor can these results be guaranteed. We DO NOT promise you that you will get the same result immediately and in any case. But we will provide you with a very good product which will definitely have a positive effect on you. We are very proud of what our customers say and have already achieved, and we hope you will be, too. We also offer you a full 100% money-back guarantee.</p>
 			</div>
 		</div>
+
 	</div>
-  
-
-<script type="text/javascript">
-
-$(document).ready(function() {
-    // check cookie
-    var visited = Cookies.get('visited');
-    
-    if (visited) {
-
-      var divsToHide = document.getElementsByClassName("instructions");
-      for(var i = 0; i < divsToHide.length; i++){
-        divsToHide[i].style.display = "none";}
-
-
-
-      var divsToShow = document.getElementsByClassName("product");
-      for(var i = 0; i < divsToShow.length; i++){
-        divsToShow[i].style.display = "block";
-        divsToShow[i].style.visibility = "visible";}
-
-    } else {
-      console.log("Hide");
-
-      setTimeout(
-        function() {
-          var divsToHide = document.getElementsByClassName("product");
-          for(var i = 0; i < divsToHide.length; i++){
-            divsToHide[i].style.display = "none";}
-        }, 4000);
-
-      setTimeout(
-        function() {
-          var divsToHide = document.getElementsByClassName("instructions");
-          for(var i = 0; i < divsToHide.length; i++){
-            divsToHide[i].style.display = "none";}
-        }, 562000);
-
-      setTimeout(
-        function() {
-          var divsToShow = document.getElementsByClassName("product");
-          for(var i = 0; i < divsToShow.length; i++){
-            divsToShow[i].style.display = "block";
-            divsToShow[i].style.visibility = "visible";}
-        }, 562000);
-
-    }
-
-    // set cookie
-    Cookies.set('visited', 'true', { expires: 30 });
-});
-</script>
-
-
-<div class="product"  style="visibility:hidden;">
 
   <div class="course-teasers">
 
@@ -283,6 +215,7 @@ $(document).ready(function() {
 		</div>
 	</div>
 </div>
+
   <section class="testimonials">
   <div class="container">
     <h2 class="testimonial-heading heading1">Success stories</h2>
@@ -363,7 +296,6 @@ $(document).ready(function() {
   </div>
 
 </div>
-
   </div>
   
 	<div class="row" style="background-color:#2a2c30;">
@@ -1377,8 +1309,6 @@ If you’re missing any of this equipment, there are usually alternative movemen
 
 </div>
 
-</div>
-
   <div class="passion-footer">
     <div class="container max-width">
         <div class="row additional-links">
@@ -1408,6 +1338,9 @@ If you’re missing any of this equipment, there are usually alternative movemen
 
 
 <script src="https://use.fontawesome.com/b44c95f642.js"></script>
+<script src="/assets/application-b6a4bfc87d38eede2cae50c0fce4a7b7.js"></script>
+<script src="/assets/learn/base-e7c621880b5f2e4bf307dd488cc28cc4.js"></script>
+<script src="/assets/learn/courses-6aa4ba396fa0ea70e8fb2adfa841e28e.js"></script>
 
 <script>
 
@@ -1448,7 +1381,6 @@ If you’re missing any of this equipment, there are usually alternative movemen
 
   </script>
 	  
-	  
 	  <!-- Google Code für ein Remarketing-Tag -->
 	  <script type="text/javascript">
 	  /* <![CDATA[ */
@@ -1464,7 +1396,8 @@ If you’re missing any of this equipment, there are usually alternative movemen
 	  <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/849105884/?guid=ON&amp;script=0"/>
 	  </div>
 	  </noscript>
-
+    
+    
 <script type="text/javascript">
   (function() {
     var _fbq = window._fbq || (window._fbq = []);
@@ -1503,7 +1436,6 @@ If you’re missing any of this equipment, there are usually alternative movemen
   ga('linker:autoLink', ['passion.io'] );
 
 </script>
-
 
 </body>
 </html>
